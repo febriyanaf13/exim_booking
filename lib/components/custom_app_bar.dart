@@ -6,7 +6,7 @@ import 'package:iconify_flutter/icons/bi.dart';
 import '../style/colors.dart';
 import '../style/paddings.dart';
 
-class CustomPrimaryAppBar extends StatelessWidget with PreferredSizeWidget {
+class CustomPrimaryAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
   final String title;
@@ -27,7 +27,7 @@ class CustomPrimaryAppBar extends StatelessWidget with PreferredSizeWidget {
         title,
         style: Theme.of(context)
             .textTheme
-            .headline5
+            .headlineMedium
             ?.copyWith(color: kPrimaryColor),
       ),
       titleSpacing: kPagePadding,
@@ -41,7 +41,7 @@ class CustomPrimaryAppBar extends StatelessWidget with PreferredSizeWidget {
   }
 }
 
-class CustomSecondaryAppBar extends StatelessWidget with PreferredSizeWidget {
+class CustomSecondaryAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
   final String title;
@@ -73,7 +73,7 @@ class CustomSecondaryAppBar extends StatelessWidget with PreferredSizeWidget {
           title,
           style: Theme.of(context)
               .textTheme
-              .headline5
+              .headlineMedium
               ?.copyWith(color: kPrimaryColor),
         ),
       ),

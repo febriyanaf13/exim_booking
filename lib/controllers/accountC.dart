@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+// import 'package:package_info_plus/package_info_plus.dart';
 
 import '../routes/routes_name.dart';
 import '../utils/constants.dart';
@@ -10,7 +10,7 @@ class AccountController extends GetxController {
 
   @override
   void onInit() {
-    getVersionApp();
+    // getVersionApp();
     super.onInit();
   }
 
@@ -35,9 +35,9 @@ class AccountController extends GetxController {
       content: Text("Apakah anda yakin ingin keluar?"),
     ));
   }
-
-  void getVersionApp() async {
-    PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    version.value = packageInfo.version;
-  }
+  //
+  // void getVersionApp() async {
+  //   PackageInfo packageInfo = await PackageInfo.fromPlatform();
+  //   version.value = packageInfo.version;
+  // }
 }
